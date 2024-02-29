@@ -3,48 +3,92 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="node_modules/modern-normalize/modern-normalize.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Montserrat:ital,wght@0,600;1,600&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>Simply Chocolate</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <a href=""
-          >SIMPLY CHOCOLATE
-          <img src="./images/chocolate.svg" alt="site logo" />
+    <header class="header">
+      <nav class="header-navigation">
+        <a class="header-logo" href=""
+          ><span class="header-logo-cursive">SIMPLY</span> CHOCOLATE
+          <img
+            class="header-logo-img"
+            src="./images/chocolate.svg"
+            alt="site logo"
+          />
         </a>
-        <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">How it’s made?</a></li>
-          <li><a href="">Chocolate is loved</a></li>
+        <ul class="header-menu-list">
+          <li class="header-menu-item">
+            <a class="header-menu-link" href="">Home</a>
+          </li>
+          <li class="header-menu-item">
+            <a class="header-menu-link" href="">How it’s made?</a>
+          </li>
+          <li class="header-menu-item">
+            <a class="header-menu-link" href="">Chocolate is loved</a>
+          </li>
         </ul>
       </nav>
-      <ul>
-        <li>
-          <a href="" target="_blank" rel="noopener noreferrer nofollow"
-            ><img src="./images/instagram.svg" alt="icon"
+      <ul class="header-contact-list">
+        <li class="header-contact-item">
+          <a
+            class="header-contact-link"
+            href=""
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            ><img
+              class="header-contact-img"
+              src="./images/instagram.svg"
+              alt="icon"
           /></a>
         </li>
-        <li>
-          <a href="" target="_blank" rel="noopener noreferrer nofollow"
-            ><img src="./images/facebook.svg" alt="icon"
+        <li class="header-contact-item">
+          <a
+            class="header-contact-link"
+            href=""
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            ><img
+              class="header-contact-img"
+              src="./images/facebook.svg"
+              alt="icon"
           /></a>
         </li>
-        <li>
-          <a href="" target="_blank" rel="noopener noreferrer nofollow"
-            ><img src="./images/twitter.svg" alt="icon"
+        <li class="header-contact-item">
+          <a
+            class="header-contact-link"
+            href=""
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            ><img
+              class="header-contact-img"
+              src="./images/twitter.svg"
+              alt="icon"
           /></a>
         </li>
       </ul>
     </header>
     <main>
-      <section>
-        <h1>
+      <section class="hero">
+        <h1 class="hero-title">
           Treat yourself or a loved one to our finest ingredients for a moment
           of pure delight!
         </h1>
-        <button type="button">Buy now</button>
-        <a href="#made">How it’s made</a>
-        <a href="">scroll down<img src="./images/2.svg" alt="scroll" /></a>
+        <button class="hero-buy-btn" type="button">Buy now</button>
+        <a class="hero-made-btn" href="#made">How it’s made</a>
+        <a class="hero-down-btn" href=""
+          >scroll down<img src="./images/2.svg" alt="scroll"
+        /></a>
       </section>
       <section>
         <h2 hidden>Features</h2>
