@@ -82,6 +82,7 @@ color: #fd9222;
     margin-right: 90px; 
 }
 
+
 .header-logo {
 font-weight: 700;
     font-size: 18px;
@@ -102,8 +103,9 @@ font-style: italic;
         line-height: 1.14;
         letter-spacing: -0.02em;
         color: #111;
+       
 }
-
+        
 .header-logo-img {
     stroke-width: 2px;
 }
@@ -123,15 +125,33 @@ font-weight: 500;
     color: #fd9222;
 }
 
-
-.header-contact-img:hover {
-    color: #fd9222;
+.header-contact-link {
+     width: 40px;
+     height: 40px;
+     background-color: #fd9222;
+     border-radius: 50%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     transition-property: background-color;            
+     transition-duration: 500ms;
+     transition-delay: 0ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+ 
+.header-contact-link:hover {
+background-color: aquamarine;
 }
 
 .header-contact-list {
     display: flex;
     gap: 14px;
 
+}
+
+.header-contact-icons {
+    fill: transparent;
+    stroke: #fff;
 }
 
 /* ===============HERO=============== */
@@ -143,6 +163,8 @@ padding-bottom: 80px;
 .hero-wrap {
     padding: 380px 40px 40px 40px;
     background: rgba(17, 17, 17, 0.6);
+    background-image: linear-gradient(180deg, rgba(17, 17, 17, 0.4) 0%, rgba(17, 17, 17, 0.4) 100%), url(../images/chocolate_main.jpg);
+    background-size: cover;
     border-radius: 30px;
 }
 
@@ -179,7 +201,7 @@ font-weight: 500;
     font-weight: 600;
         font-size: 14px;
         color: #fff;
-        background-color: transparent;
+        background-color: none;
 }
 
 .hero-down-btn {
@@ -281,13 +303,18 @@ font-weight: 500;
 
 /* ===============MADE=============== */
 
-.made {}
+.made {
+        padding-top: 60px;
+            padding-bottom: 60px;
+}
 
 .made-title {}
 
 .made-title span {}
 
-.made-image {}
+.made-image {
+    display: flex;
+}
 
 .made-subtitle {
     font-weight: 600;
@@ -296,9 +323,15 @@ font-weight: 500;
         color: #111;
 }
 
-.made-list {}
+.made-list {
+
+}
 
 .made-item {}
+
+.made-item::before {
+    
+}
 
 .made-item-text {
     font-size: 14px;
@@ -309,7 +342,10 @@ font-weight: 500;
 
 /* ===============PRODUCTS=============== */
 
-.products {}
+.products {
+        padding-top: 60px;
+            padding-bottom: 60px;
+}
 
 .products-title {}
 
@@ -345,17 +381,56 @@ font-weight: 500;
 
 /* ===============TOP=============== */
 
-.top {}
+.top {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
 
-.top-title {}
+.top-title {
+    margin-bottom: 50px;
+}
 
 .top-title span {}
 
-.top-list {}
+.top-list {
+    display: flex;
+    gap: 16px;
+}
 
-.top-item {}
+.top-item {
+    width: calc((100% - 16px * 2) / 3);
+    border-radius: 15px 15px 0 0;
+}
+
+.top-item:hover .top-sallers-text {
+transform: translateY(0);
+}
+
+.sellers-cover-wrap {
+    position: relative;
+    overflow: hidden;
+}
 
 .top-image {}
+
+.top-sallers-text {
+    position: absolute;
+    top: 0;
+        font-size: 14px;
+        line-height: 1.29;
+        letter-spacing: -0.02em;
+        color: #fafafa;
+        backdrop-filter: blur(15px);
+            background: linear-gradient(161deg, rgba(253, 253, 255, 0.1) 0%, rgba(8, 2, 21, 0.1) 100%);
+        height: 100%;
+        border-radius: 15px 15px 0 0;
+        padding-left: 40px;
+        padding-right: 40px;
+        display: flex;
+        align-items: center;
+        transform: translateY(100%);
+        transition: transform 300ms ease;
+}
 
 .top-subtitle {
     font-weight: 600;
@@ -364,11 +439,21 @@ font-weight: 500;
         letter-spacing: -0.02em;
         text-transform: uppercase;
     color: #111;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    text-align: center;
+    border-bottom: 1px solid rgba(17, 17, 17, 0.1);
+        border-left: 1px solid rgba(17, 17, 17, 0.1);
+        border-right: 1px solid rgba(17, 17, 17, 0.1);
+        border-radius: 0 0 15px 15px;
 }
 
 /* ===============LOVED=============== */
 
-.loved {}
+.loved {
+        padding-top: 60px;
+            padding-bottom: 60px;
+}
 
 .loved-title {}
 
